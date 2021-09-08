@@ -1,0 +1,378 @@
+/* css file for doclist.html */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+    background-color: #CFD8DC;
+}
+
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.main_head {
+    text-align: center;
+    font-size: 38px;
+}
+
+.side_head {
+    padding-left: 15px;
+    background-color: orange;
+}
+
+hr {
+    background-color: black;
+    height: 5px;
+}
+
+.death {
+    padding-left: 8pt;
+    padding-right: 10pt;
+    padding-top: 8pt;
+    font-size: 18px;
+    line-height: 2.0;
+}
+
+.doctors {
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+.doctor_list1 h2 {
+    padding-left: 28%;
+    padding-top: 1%;
+}
+
+.doctor_list1 img {
+    border-radius: 15px;
+    border-style: solid;
+    margin-left: 1%;
+    margin-top: 1.5%;
+    height: 25%;
+    width: 25%
+}
+
+.doctor_list1 .description {
+    margin-left: 28%;
+    margin-right: 3%;
+    margin-top: -18.5%;
+    font-size: 18px;
+    line-height: 2.0;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+.doctor_list2 h2 {
+    padding-left: 2%;
+    padding-top: 1%;
+}
+
+.doctor_list2 img {
+    border-radius: 15px;
+    border-style: solid;
+    margin-left: 72%;
+    margin-top: 0%;
+    height: 25%px;
+    width: 25%
+}
+
+.doctor_list2 .description {
+    margin-left: 2%;
+    margin-right: 30%;
+    margin-top: -12%;
+    font-size: 18px;
+    line-height: 2.0;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+.doctor_list3 h2 {
+    padding-left: 28%;
+    padding-top: 1%;
+}
+
+.doctor_list3 img {
+    border-radius: 15px;
+    border-style: solid;
+    margin-left: 1%;
+    margin-top: -2%;
+    height: 25%;
+    width: 25%
+}
+
+.doctor_list3 .description {
+    margin-left: 28%;
+    margin-right: 3%;
+    margin-top: -17%;
+    font-size: 18px;
+    line-height: 2.0;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+.doctor_list4 h2 {
+    padding-left: 2%;
+    padding-top: 1%;
+}
+
+.doctor_list4 img {
+    border-radius: 15px;
+    border-style: solid;
+    margin-left: 72%;
+    margin-top: -1%;
+    height: 25%px;
+    width: 25%
+}
+
+.doctor_list4 .description {
+    margin-left: 2%;
+    margin-right: 30%;
+    margin-top: -21%;
+    font-size: 18px;
+    line-height: 2.0;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+.doctor_list5 h2 {
+    padding-left: 28%;
+    padding-top: 1%;
+}
+
+.doctor_list5 img {
+    border-radius: 15px;
+    border-style: solid;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    height: 25%;
+    width: 25%
+}
+
+.doctor_list5 .description {
+    margin-left: 28%;
+    margin-right: 3%;
+    margin-top: -14%;
+    font-size: 18px;
+    line-height: 2.0;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+.doctor_list6 h2 {
+    padding-left: 2%;
+    padding-top: 1%;
+}
+
+.doctor_list6 img {
+    border-radius: 15px;
+    border-style: solid;
+    margin-left: 72%;
+    margin-top: 0%;
+    height: 25%px;
+    width: 25%
+}
+
+.doctor_list6 .description {
+    margin-left: 2%;
+    margin-right: 30%;
+    margin-top: -20%;
+    font-size: 18px;
+    line-height: 2.0;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+.doctor_list7 h2 {
+    padding-left: 28%;
+    padding-top: 1%;
+}
+
+.doctor_list7 img {
+    border-radius: 15px;
+    border-style: solid;
+    margin-left: 1%;
+    margin-top: -1%;
+    height: 25%;
+    width: 25%
+}
+
+.doctor_list7 .description {
+    margin-left: 28%;
+    margin-right: 3%;
+    margin-top: -17.5%;
+    font-size: 18px;
+    line-height: 2.0;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+.doctor_list8 h2 {
+    padding-left: 2%;
+    padding-top: 1%;
+}
+
+.doctor_list8 img {
+    border-radius: 15px;
+    border-style: solid;
+    margin-left: 72%;
+    margin-top: 0;
+    height: 25%px;
+    width: 25%
+}
+
+.doctor_list8 .description {
+    margin-left: 2%;
+    margin-right: 30%;
+    margin-top: -21%;
+    font-size: 18px;
+    line-height: 2.0;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+.doctor_list9 h2 {
+    padding-left: 28%;
+    padding-top: 1%;
+}
+
+.doctor_list9 img {
+    border-radius: 15px;
+    border-style: solid;
+    margin-left: 1%;
+    margin-top: -1%;
+    height: 25%;
+    width: 25%
+}
+
+.doctor_list9 .description {
+    margin-left: 28%;
+    margin-right: 3%;
+    margin-top: -14%;
+    font-size: 18px;
+    line-height: 2.0;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+.doctor_list10 h2 {
+    padding-left: 2%;
+    padding-top: 1%;
+}
+
+.doctor_list10 img {
+    border-radius: 15px;
+    border-style: solid;
+    margin-left: 72%;
+    margin-top: 0;
+    height: 25%px;
+    width: 25%
+}
+
+.doctor_list10 .description {
+    margin-left: 2%;
+    margin-right: 30%;
+    margin-top: -17%;
+    font-size: 18px;
+    line-height: 2.0;
+    text-align: justify;
+}
